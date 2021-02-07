@@ -4,8 +4,6 @@ Ini adalah source code dari website portofolio saya yang dibuat dari sass, tailw
 ## Website
 https://yusril-adr.github.io
 
----
-
 ## Build dan Test
 - Pastikan node.js dan npm sudah terinstall di perangkat anda.
 - Install module yang dibutuhkan dengan perintah : 
@@ -33,4 +31,4 @@ https://yusril-adr.github.io
 ## LICENSE
 [BSD 3-Clause](LICENSE.md)
 
-© Developed by [yusril-adr](https://github.com/yusril-adr).
+© Developed by [Yusril A. P.](https://github.com/yusril-adr).
