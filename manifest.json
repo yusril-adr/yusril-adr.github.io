@@ -1,0 +1,36 @@
+{
+  "icons": [
+    {
+      "src": "/images/icon_512x512.80942e8682e4b49a37380b3edffd2ee2.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "/images/icon_384x384.180b17ed137442e3869896824953a9c2.png",
+      "sizes": "384x384",
+      "type": "image/png",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "/images/icon_256x256.b53927aded153c231460f3602620f0aa.png",
+      "sizes": "256x256",
+      "type": "image/png",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "/images/icon_192x192.40a3a1585a6db386b250319721772d69.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any maskable"
+    }
+  ],
+  "name": "Yusril A. P. Portofolio",
+  "short_name": "Yusril A. P.",
+  "orientation": "portrait",
+  "display": "standalone",
+  "start_url": "/",
+  "description": "Front-end Developer | Back-end Developer | Fullstack Developer",
+  "background_color": "#040402",
+  "theme_color": "#1e2327"
+}
