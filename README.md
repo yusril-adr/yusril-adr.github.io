@@ -31,4 +31,4 @@ https://yusril-adr.github.io
 ## LICENSE
 [BSD 3-Clause](LICENSE.md)
 
-© Developed by [Yusril A. P.](https://github.com/yusril-adr).
+© Developed by [Yusril A. P.](https://github.com/yusril-adr)
