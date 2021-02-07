@@ -7,9 +7,9 @@ https://yusril-adr.github.io
 ## Build dan Test
 - Pastikan node.js dan npm sudah terinstall di perangkat anda.
 - Install module yang dibutuhkan dengan perintah : 
-  ```bash 
+```bash 
   npm i
-  ```
+```
 - Compress gambar dengan perintah :
 ```bash 
   npm run build-image
