@@ -3,7 +3,6 @@ const TerserPlugin = require('terser-webpack-plugin');
 const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 const OptimizeCSSAssetsPlugin = require('optimize-css-assets-webpack-plugin');
 const ImageminPlugin = require('imagemin-webpack-plugin').default;
-const { CleanWebpackPlugin } = require('clean-webpack-plugin');
 const common = require('./webpack.common');
 
 // Needed to remove unused tailwindcss
@@ -114,6 +113,5 @@ module.exports = merge(common, {
         quality: 50,
       },
     }),
-    new CleanWebpackPlugin(),
   ],
 });
