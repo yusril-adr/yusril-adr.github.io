@@ -20,7 +20,7 @@
     "fullstack developer"
   ],
   "author": "Yusril A. P. <yusriladr.37@gmail.com>",
-  "license": "ISC",
+  "license": "BSD 3-clause \"New\" or \"Revised\" license",
   "engines": {
     "node": "14.x"
   },
