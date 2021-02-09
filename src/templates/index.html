@@ -12,40 +12,56 @@
 <body class="text-white">
   <header class="sticky top-0 z-50 animate-fade-in">
     <nav class="text-lg md:text-xl lg:text-2xl tracking-wider py-4">
-      <div class="container flex flex-wrap lg:flex-nowrap justify-between items-center">
+      <div class="container flex justify-between items-center">
 
         <p class="text-xl md:text-3xl">Web <span class="text-gradient font-bold">Portofolio</span></p>
 
-        <button class="fas fa-bars text-xl hover:text-blue-400 lg:hidden" id="menu-trigger"
-          aria-label=" buka menu"></button>
+        <div class="flex lg:hidden">
+          <div class="language-container relative text-base flex flex-col justify-center items-center mr-4">
+            <button class="fas fa-globe-americas language hover:text-blue-400" aria-label="ganti bahasa"><span class="fas fa-angle-down ml-2"></span></button>
+
+            <ul class="language-list absolute -bottom-24 text-left hidden grid-rows-2 gap-2 bg-black transform scale-0 opacity-0 origin-top transition-all duration-300"></ul>
+          </div>
+
+          <button class="fas fa-bars text-xl hover:text-blue-400" id="menu-trigger" aria-label="buka menu"></button>
+        </div>
 
         <div class="nav-list-container flex flex-col lg:inline-block lg:w-2/4">
-          <ul
-            class="nav-list text-lg lg:text-xl flex flex-col lg:flex-row justify-evenly lg:justify-between w-3/4 md:w-2/4 lg:w-full">
-            <li class="text-center text-2xl text-gradient font-bold p-4 lg:p-0 lg:hidden">
+          <ul class="nav-list text-lg lg:text-xl text-center flex flex-col lg:flex-row justify-evenly lg:justify-between w-3/4 md:w-2/4 lg:w-full">
+            <li class="text-2xl text-gradient font-bold p-4 lg:p-0 lg:hidden">
               <p>Menu</p>
             </li>
 
-            <li class="text-center p-4 lg:p-0">
+            <li class=" p-4 lg:p-0">
               <a class="hover:text-blue-400" href="#home">Home</a>
             </li>
 
-            <li class="text-center p-4 lg:p-0">
+            <li class="p-4 lg:p-0">
               <a class="hover:text-blue-400" href="#about">Tentang</a>
             </li>
 
-            <li class="text-center p-4 lg:p-0">
+            <li class="p-4 lg:p-0">
               <a class="hover:text-blue-400" href="#portfolio">Portofolio</a>
             </li>
 
-            <li class="text-center p-4 lg:p-0">
+            <li class="p-4 lg:p-0">
               <a class="hover:text-blue-400" href="#contact">Kontak</a>
             </li>
 
-            <li class="text-center text-4xl p-4 lg:hidden">
+            <li class="hidden lg:flex flex-col justify-center items-center">
+              <div class="language-container relative text-base flex flex-col justify-center items-center">
+                <button class="fas fa-globe-americas language hover:text-blue-400" aria-label="ganti bahasa"><span class="fas fa-angle-down ml-2"></span></button>
+    
+                <ul class="language-list absolute -bottom-24 text-left hidden grid-rows-2 gap-2 bg-black transform scale-0 opacity-0 origin-top transition-all duration-300"></ul>
+              </div>
+            </li>
+
+            <li class="text-4xl p-4 lg:hidden">
               <button class="fas fa-times-circle hover:text-blue-400" id="close-menu" aria-label="tutup menu"></button>
             </li>
           </ul>
+
+          <div class="nav-overlay lg:hidden bg-transparent absolute inset-0"></div>
         </div>
       </div>
     </nav>
@@ -72,7 +88,7 @@
 
     <section class="container flex justify-center mb-10" id="about">
       <div class="py-32 md:py-0 2xl:py-32 flex items-center justify-around md:min-h-screen 2xl:min-h-0 2xl:mt-8">
-        <span class="about-illust text-center tracking-tight text-8xl hidden md:inline-block" aria-label="Objek Dekorasi">y:\><span class="animate-pulse">_</span></span>
+        <span class="about-illust text-center tracking-tight text-8xl hidden md:inline-block" aria-label="Objek Dekorasi"><span class="text-indigo-500">y:</span>\><span class="animate-pulse">_</span></span>
   
         <div class="paragraf-container">
           <h2 class="text-white tracking-wider text-center md:text-left text-4xl md:text-3xl lg:text-4xl xl:text-5xl">
@@ -193,9 +209,9 @@
         </div>
 
         <div class="flex flex-col">
-          <h3 class="text-white text-lg mb-4 font-bold tracking-wider">Kontak</h3>
-          <p><i class="fas fa-envelope mt-4 text-lg" aria-label="Email"></i>&ensp;: yusriladr.37@gmail.com</p>
-          <p><i class="fas fa-phone-alt mt-4 text-lg" aria-label="Nomor Telepon"></i>&ensp;: +6287854029394</p>
+          <h3 class="text-white text-lg font-bold tracking-wider">Kontak</h3>
+          <p class="mt-4"><i class="fas fa-envelope text-lg" aria-label="Email"></i>&ensp;: yusriladr.37@gmail.com</p>
+          <p class="mt-4"><i class="fas fa-phone-alt text-lg" aria-label="Nomor Telepon"></i>&ensp;: +6287854029394</p>
         </div>
 
         <div class="flex flex-col">

@@ -1,5 +1,15 @@
 import CONFIG from '../../global/CONFIG';
 
+const createIdLanguageListTemplate = () => `
+  <li><button class="language-item p-2 text-gradient font-bold w-full text-left" value="id" disabled>Indonesia</button></li>
+  <li><button class="language-item p-2 text-gray-400 hover:text-white w-full text-left" value="en">English</button></li>
+`;
+
+const createEnLanguageListTemplate = () => `
+  <li><button class="language-item p-2 text-gradient font-bold w-full text-left" value="en" disabled>English</button></li>
+  <li><button class="language-item p-2 text-gray-400 hover:text-white w-full text-left" value="id">Indonesia</button></li>
+`;
+
 const createOddPortfolioTemplate = ({
   name, description, image, url,
 }) => `
@@ -63,6 +73,8 @@ const createEvenPortfolioTemplate = ({
 `;
 
 export {
+  createIdLanguageListTemplate,
+  createEnLanguageListTemplate,
   createOddPortfolioTemplate,
   createEvenPortfolioTemplate,
 };

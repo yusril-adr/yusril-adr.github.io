@@ -41,13 +41,13 @@ header {
   }
 }
 
+section {
+  opacity: 0;
+}
+
 footer {
   min-height: 75px;
   background-color: #0c0d0c;
-}
-
-section {
-  opacity: 0;
 }
 
 .reached {
@@ -62,7 +62,7 @@ section {
 .hover\:gradient-border:hover  {
   @apply border-solid border-2;
   border-image-slice: 1;
-  border-image-source: linear-gradient(to top right, rgb(96, 165, 250), rgb(4, 120, 87));
+  border-image-source: linear-gradient(to top right, rgb(96, 165, 250), rgb(99, 102, 241), rgb(4, 120, 87));
 }
 
 .text-gradient,
@@ -111,6 +111,14 @@ section {
 }
 
 #contact {
+  background-color: #111;
+}
+
+.language-list.active {
+  @apply opacity-100 scale-100;
+}
+
+.language-item:hover {
   background-color: #111;
 }
 
@@ -166,7 +174,7 @@ section {
       visibility: hidden;
 
       .nav-list {
-        @apply m-auto bg-black bg-opacity-0 rounded-lg transform scale-0 transition-all duration-300 ease-in;
+        @apply relative z-10 m-auto bg-black bg-opacity-0 rounded-lg transform scale-0 transition-all duration-300 ease-in;
       }
     }
 

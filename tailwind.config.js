@@ -11,6 +11,7 @@ module.exports = {
         pulse: 'pulse 1s linear infinite;',
         'pop-up': 'pop-up .3s ease-in-out forwards;',
         'slide-from-bottom': 'slide-from-bottom .7s ease forwards;',
+        'slide-from-top': 'slide-from-top .7s ease forwards;',
       },
       keyframes: {
         'fade-in': {
@@ -29,6 +30,16 @@ module.exports = {
           '0%': {
             opacity: 0,
             transform: 'translateY(3rem)',
+          },
+          '100%': {
+            opacity: 1,
+            transform: 'translateY(0)',
+          },
+        },
+        'slide-from-top': {
+          '0%': {
+            opacity: 0,
+            transform: 'translateY(-3rem)',
           },
           '100%': {
             opacity: 1,

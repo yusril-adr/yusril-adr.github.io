@@ -2,30 +2,36 @@ const HeaderInitiator = {
   async init(header = document.querySelector('header')) {
     this._header = header;
     this._navListContainer = this._header.querySelector('.nav-list-container');
+    this._navListOverlay = this._header.querySelector('.nav-overlay');
     this._navList = this._navListContainer.querySelectorAll('a');
     this._menuBtn = this._header.querySelector('#menu-trigger');
     this._closeBtn = this._header.querySelector('#close-menu');
 
     document.addEventListener('scroll', async () => {
-      this._scrollEvent(this._header);
+      await this._scrollEvent(this._header);
+    });
+
+    this._navListOverlay.addEventListener('click', async (event) => {
+      await this._closeMenu(this._navListContainer);
+      event.stopPropagation();
     });
 
     this._menuBtn.addEventListener('click', async (event) => {
-      this._openMenu(this._navListContainer);
+      await this._openMenu(this._navListContainer);
       event.stopPropagation();
     });
 
     this._navList.forEach((navItem) => {
       navItem.addEventListener('click', async (event) => {
         event.preventDefault();
-        this._scrollPage(navItem);
-        this._closeMenu(this._navListContainer);
+        await this._scrollPage(navItem);
+        await this._closeMenu(this._navListContainer);
         event.stopPropagation();
       });
     });
 
     this._closeBtn.addEventListener('click', async (event) => {
-      this._closeMenu(this._navListContainer);
+      await this._closeMenu(this._navListContainer);
       event.stopPropagation();
     });
   },
