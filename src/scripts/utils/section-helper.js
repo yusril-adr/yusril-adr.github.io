@@ -3,9 +3,12 @@ const SectionHelper = {
     const sections = document.querySelectorAll('section');
 
     sections.forEach((section) => {
-      document.addEventListener('scroll', async () => {
-        this._setAnimation(section);
-      });
+      const sectionId = section.id;
+      if (sectionId !== 'home' && sectionId !== 'contact') {
+        document.addEventListener('scroll', async () => {
+          this._setAnimation(section);
+        });
+      }
     });
   },
 
@@ -17,7 +20,8 @@ const SectionHelper = {
     }
   },
 
-  async _isReach(offset) {
+  async _isReach(elementOffset) {
+    const offset = elementOffset - (innerHeight * 0.75);
     return document.body.scrollTop > offset || document.documentElement.scrollTop > offset;
   },
 

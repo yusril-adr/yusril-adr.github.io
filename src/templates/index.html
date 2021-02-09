@@ -10,7 +10,7 @@
 </head>
 
 <body class="text-white">
-  <header class="sticky top-0 z-50">
+  <header class="sticky top-0 z-50 animate-fade-in">
     <nav class="text-lg md:text-xl lg:text-2xl tracking-wider py-4">
       <div class="container flex flex-wrap lg:flex-nowrap justify-between items-center">
 
@@ -31,15 +31,15 @@
             </li>
 
             <li class="text-center p-4 lg:p-0">
-              <a class="hover:text-blue-400" href="#tentang">Tentang</a>
+              <a class="hover:text-blue-400" href="#about">Tentang</a>
             </li>
 
             <li class="text-center p-4 lg:p-0">
-              <a class="hover:text-blue-400" href="#portofolio">Portofolio</a>
+              <a class="hover:text-blue-400" href="#portfolio">Portofolio</a>
             </li>
 
             <li class="text-center p-4 lg:p-0">
-              <a class="hover:text-blue-400" href="#kontak">Kontak</a>
+              <a class="hover:text-blue-400" href="#contact">Kontak</a>
             </li>
 
             <li class="text-center text-4xl p-4 lg:hidden">
@@ -53,12 +53,12 @@
 
   <main class="w-full">
     <section class="container flex flex-col md:flex-row items-center justify-around min-h-screen 2xl:min-h-0 2xl:mt-8 mb-10" id="home">
-      <div class="tracking-wider text-center md:text-left">
+      <div class="tracking-wider text-center md:text-left animate-slide-from-bottom">
         <h1 class="text-gradient text-5xl md:text-4xl lg:text-5xl xl:text-6xl">Yusril A. P.</h1>
         <h2 class="text-xl">Web Developer</h2>
       </div>
 
-      <picture class="my-picture">
+      <picture class="my-picture animate-slide-from-bottom">
         <source media="(max-width: 360px)" srcset="/images/me-small.png">
         <source media="(max-width: 640px)" srcset="/images/me-medium.png">
         <source srcset="/images/me.webp">
@@ -70,9 +70,9 @@
       </picture>
     </section>
 
-    <section class="container flex justify-center mb-10" id="tentang">
+    <section class="container flex justify-center mb-10" id="about">
       <div class="py-32 md:py-0 2xl:py-32 flex items-center justify-around md:min-h-screen 2xl:min-h-0 2xl:mt-8">
-        <span class="tentang-illust text-center tracking-tight text-8xl hidden md:inline-block" aria-label="Objek Dekorasi">y:\><span class="animate-pulse">_</span></span>
+        <span class="about-illust text-center tracking-tight text-8xl hidden md:inline-block" aria-label="Objek Dekorasi">y:\><span class="animate-pulse">_</span></span>
   
         <div class="paragraf-container">
           <h2 class="text-white tracking-wider text-center md:text-left text-4xl md:text-3xl lg:text-4xl xl:text-5xl">
@@ -86,7 +86,7 @@
       </div>
     </section>
 
-    <section class="container flex justify-center mb-20" id="keunggulan">
+    <section class="container flex justify-center mb-20" id="reason">
       <div class="w-full pt-16 flex flex-col items-center justify-evenly min-h-screen xl:min-h-0 xl:mt-8">
         <div class="text-center mt-8">
           <h2 class="text-white tracking-wider text-4xl md:text-3xl lg:text-4xl xl:text-5xl">Keunggulan</h2>
@@ -166,7 +166,7 @@
       </div>
     </section>
 
-    <section class="container flex justify-center mb-10" id="portofolio">
+    <section class="container flex justify-center mb-10" id="portfolio">
       <div class="pt-16 flex flex-col items-center justify-evenly min-h-screen 2xl:min-h-0 2xl:mt-8">
         <div class="text-center mt-8">
           <h2 class="text-white tracking-wider text-4xl md:text-3xl lg:text-4xl xl:text-5xl">Portofolio</h2>
@@ -177,7 +177,7 @@
       </div>
     </section>
 
-    <section class="flex justify-center py-8 text-gray-400 text-sm" id="kontak">
+    <section class="flex justify-center py-8 text-gray-400 text-sm" id="contact">
       <div class="container grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-x-32 gap-y-16">
         <div class="flex flex-col">
           <h3 class="text-lg font-bold">Web <span class="text-gradient">Portofolio</span></h3>
@@ -194,8 +194,8 @@
 
         <div class="flex flex-col">
           <h3 class="text-white text-lg mb-4 font-bold tracking-wider">Kontak</h3>
-          <p><i class="fas fa-envelope mt-4 text-lg" aria-label="Email"></i> : yusriladr.37@gmail.com</p>
-          <p><i class="fas fa-phone-alt mt-4 text-lg" aria-label="Nomor Telepon"></i> : +6287854029394</p>
+          <p><i class="fas fa-envelope mt-4 text-lg" aria-label="Email"></i>&ensp;: yusriladr.37@gmail.com</p>
+          <p><i class="fas fa-phone-alt mt-4 text-lg" aria-label="Nomor Telepon"></i>&ensp;: +6287854029394</p>
         </div>
 
         <div class="flex flex-col">
