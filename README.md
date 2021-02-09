@@ -1,8 +1,8 @@
-## Informasi
-Branch ini hanya untuk versi dist.
+## Information
+This branch is only for dist verison.
 
 ## Source code
-[source](https://github.com/yusril-adr/yusril-adr.github.io/tree/source)
+Visit the source code branch here : [source](https://github.com/yusril-adr/yusril-adr.github.io/tree/source)
 
 ---
 ## Website
