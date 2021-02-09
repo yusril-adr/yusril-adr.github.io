@@ -5,8 +5,7 @@
   "main": "app.js",
   "scripts": {
     "analyze": "webpack --config webpack.analyzer.js",
-    "build": " webpack --config webpack.prod.js",
-    "build-dev": "webpack --config webpack.dev.js && node app.js",
+    "build": "npm run build-image && webpack --config webpack.prod.js",
     "build-image": "node sharp-webp-converter.js && node sharp-resizer.js",
     "graph": "git log --all --oneline --text --decorate --graph",
     "test": "node app.js"
