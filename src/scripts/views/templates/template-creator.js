@@ -11,8 +11,8 @@ const createEnLanguageListTemplate = () => `
 `;
 
 const createOddPortfolioTemplate = ({
-  name, description, image, url,
-}) => `
+  name, description, image, url, aria_label,
+}, lang) => `
   <div class="portfolio-text mt-8 md:mt-0">
     <a href="${url}" target="_blank" rel="noreferrer">
       <h3
@@ -20,7 +20,7 @@ const createOddPortfolioTemplate = ({
         ${name}</h3>
     </a>
 
-    <p class="text-gray-400 mt-4 lg:mt-8">${description.id}</p>
+    <p class="text-gray-400 mt-4 lg:mt-8">${description[lang]}</p>
   </div>
 
   <a href="${url}" target="_blank" rel="noreferrer" class="contents">
@@ -35,15 +35,15 @@ const createOddPortfolioTemplate = ({
         " sizes="(max-width: ${CONFIG.PORTFOLIO.IMAGES.SMALL}px) ${CONFIG.PORTFOLIO.IMAGES.SMALL}px,(max-width: ${image.size - 1}px) ${CONFIG.PORTFOLIO.IMAGES.MEDIUM}px, ${image.size}px" alt="${name}" />
 
       <div class="hover-image">
-        <i class="fas fa-search m-auto text-gradient text-7xl" aria-label="Kunjungi Website"></i>
+        <i class="fas fa-search m-auto text-gradient text-7xl" aria-label="${aria_label[lang]}"></i>
       </div>
     </picture>
   </a>
 `;
 
 const createEvenPortfolioTemplate = ({
-  name, description, image, url,
-}) => `
+  name, description, image, url, aria_label,
+}, lang) => `
   <a href="${url}" target="_blank" rel="noreferrer" class="contents">
     <picture class="portfolio-image md:inline-block">
       <source media="(max-width: ${CONFIG.PORTFOLIO.IMAGES.SMALL}px)" srcset="/images/${image.name}-small.png">
@@ -56,7 +56,7 @@ const createEvenPortfolioTemplate = ({
           " sizes="(max-width: ${CONFIG.PORTFOLIO.IMAGES.SMALL}px) ${CONFIG.PORTFOLIO.IMAGES.SMALL}px,(max-width: ${image.size - 1}px) ${CONFIG.PORTFOLIO.IMAGES.MEDIUM}px, ${image.size}px" alt="${name}" />
 
       <div class="hover-image">
-        <i class="fas fa-search m-auto text-gradient text-7xl" aria-label="Kunjungi Website"></i>
+        <i class="fas fa-search m-auto text-gradient text-7xl" aria-label="${aria_label[lang]}"></i>
       </div>
     </picture>
   </a>
@@ -68,7 +68,7 @@ const createEvenPortfolioTemplate = ({
         ${name}</h3>
     </a>
 
-    <p class="text-gray-400 mt-4 lg:mt-8">${description.id}</p>
+    <p class="text-gray-400 mt-4 lg:mt-8">${description[lang]}</p>
   </div>
 `;
 

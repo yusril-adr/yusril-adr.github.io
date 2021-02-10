@@ -3,7 +3,6 @@ const TerserPlugin = require('terser-webpack-plugin');
 const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 const OptimizeCSSAssetsPlugin = require('optimize-css-assets-webpack-plugin');
 const ImageminPlugin = require('imagemin-webpack-plugin').default;
-const { GenerateSW } = require('workbox-webpack-plugin');
 const common = require('./webpack.common');
 
 // Needed to remove unused tailwindcss
@@ -113,11 +112,6 @@ module.exports = merge(common, {
       pngquant: {
         quality: 50,
       },
-    }),
-    new GenerateSW({
-      swDest: 'service-worker.js',
-      clientsClaim: true,
-      skipWaiting: true,
     }),
   ],
 });

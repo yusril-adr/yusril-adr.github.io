@@ -2,6 +2,7 @@ const path = require('path');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 const CopyWebpackPlugin = require('copy-webpack-plugin');
 const WebpackPwaManifest = require('webpack-pwa-manifest');
+const { GenerateSW } = require('workbox-webpack-plugin');
 const { CleanWebpackPlugin } = require('clean-webpack-plugin');
 
 module.exports = {
@@ -45,7 +46,7 @@ module.exports = {
     }),
     new WebpackPwaManifest({
       filename: 'manifest.json',
-      name: 'Yusril A. P. Portofolio',
+      name: 'Yusril A. P. Portfolio',
       short_name: 'Yusril A. P.',
       description: 'Front-end Developer | Back-end Developer | Fullstack Developer',
       start_url: '/',
@@ -64,6 +65,11 @@ module.exports = {
           purpose: 'any maskable',
         },
       ],
+    }),
+    new GenerateSW({
+      swDest: 'service-worker.js',
+      clientsClaim: true,
+      skipWaiting: true,
     }),
     new CleanWebpackPlugin(),
   ],
