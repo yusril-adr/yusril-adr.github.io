@@ -1,31 +1,31 @@
 {
   "icons": [
     {
-      "src": "/images/icon_512x512.80942e8682e4b49a37380b3edffd2ee2.png",
+      "src": "/images/icon_512x512.8b3f3859b7d8f13a59a5c70b3e71a620.png",
       "sizes": "512x512",
       "type": "image/png",
       "purpose": "any maskable"
     },
     {
-      "src": "/images/icon_384x384.180b17ed137442e3869896824953a9c2.png",
+      "src": "/images/icon_384x384.067e94f0bd4650af27c7605c8cfd11ca.png",
       "sizes": "384x384",
       "type": "image/png",
       "purpose": "any maskable"
     },
     {
-      "src": "/images/icon_256x256.b53927aded153c231460f3602620f0aa.png",
+      "src": "/images/icon_256x256.2f74a2a739085a86d805aec8ea291b82.png",
       "sizes": "256x256",
       "type": "image/png",
       "purpose": "any maskable"
     },
     {
-      "src": "/images/icon_192x192.40a3a1585a6db386b250319721772d69.png",
+      "src": "/images/icon_192x192.f3b2e5567605279a0aadabc103307855.png",
       "sizes": "192x192",
       "type": "image/png",
       "purpose": "any maskable"
     }
   ],
-  "name": "Yusril A. P. Portofolio",
+  "name": "Yusril A. P. Portfolio",
   "short_name": "Yusril A. P.",
   "orientation": "portrait",
   "display": "standalone",
