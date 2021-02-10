@@ -1,34 +1,38 @@
-## Web Portofolio Saya
-Ini adalah source code dari website portofolio saya yang dibuat dari sass, tailwindcss, webpack, dan workbox. Website ini juga bersifat progressive web apps (PWA).
+## My portfolio website
+This is the source code of my portfolio website that i made with sass, tailwindcss, webpack, and workbox.
+This web is also have a progressive web apps feature.
+
+## Another Language
+- [Indonesia](./README_id.md)
 
 ## Website
 https://yusril-adr.github.io
 
-## Build dan Test
-- Pastikan node.js dan npm sudah terinstall di perangkat anda.
-- Install module yang dibutuhkan dengan perintah : 
+## Build and Test
+- Be sure your computer is already installed node.js and npm.
+- Install the module with command : 
 ```bash 
   npm i
 ```
-- Compress gambar dengan perintah :
+- Compress the image with command :
 ```bash 
   npm run build-image
 ```
-- Jalankan mode developer dengan perintah :
+- Run developer mode by command :
 ```bash 
   npm test
 ```
-- Atau jika anda ingin membuild mode production, jalankan perintah : 
+- Or if you want to build production mode you can run this command :
 ```bash 
   npm run build
 ```
-- Jika anda ingin menganalisis struktur javascript, jalankan perintah :
+- If you want to analyze the structre, use command :
 ```bash 
   npm run analyze
 ```
 
 ---
 ## LICENSE
-[BSD 3-Clause](LICENSE.md)
+[BSD 3-Clause](./LICENSE.md)
 
 © Developed by [Yusril A. P.](https://github.com/yusril-adr)
