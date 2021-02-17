@@ -25,8 +25,8 @@ const createOddPortfolioTemplate = ({
 
   <a href="${url}" target="_blank" rel="noreferrer" class="contents">
     <picture class="portfolio-image md:inline-block">
-      <source media="(max-width: ${CONFIG.PORTFOLIO.IMAGES.SMALL}px)" srcset="/images/${image.name}-small.png">
-      <source media="(max-width: ${image.size - 1}px)" srcset="/images/${image.name}-medium.png">
+      <source media="(max-width: ${CONFIG.PORTFOLIO.IMAGES.SMALL}px)" srcset="/images/${image.name}-small.webp">
+      <source media="(max-width: ${image.size - 1}px)" srcset="/images/${image.name}-medium.webp">
       <source srcset="/images/${image.name}.webp">
       <img src="/images/${image.name}.png" srcset="
             /images/${image.name}-small.png ${CONFIG.PORTFOLIO.IMAGES.SMALL}w,
@@ -46,8 +46,8 @@ const createEvenPortfolioTemplate = ({
 }, lang) => `
   <a href="${url}" target="_blank" rel="noreferrer" class="contents">
     <picture class="portfolio-image md:inline-block">
-      <source media="(max-width: ${CONFIG.PORTFOLIO.IMAGES.SMALL}px)" srcset="/images/${image.name}-small.png">
-      <source media="(max-width: ${image.size - 1}px)" srcset="/images/${image.name}-medium.png">
+      <source media="(max-width: ${CONFIG.PORTFOLIO.IMAGES.SMALL}px)" srcset="/images/${image.name}-small.webp">
+      <source media="(max-width: ${image.size - 1}px)" srcset="/images/${image.name}-medium.webp">
       <source srcset="/images/${image.name}.webp">
       <img src="/images/${image.name}.png" srcset="
               /images/${image.name}-small.png ${CONFIG.PORTFOLIO.IMAGES.SMALL}w,
