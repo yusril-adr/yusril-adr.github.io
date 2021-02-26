@@ -4,6 +4,7 @@ const CONFIG = {
     'tailwindcss',
     'webpack',
     'mongodb',
+    'express',
     'nodejs',
   ],
   PORTFOLIO: {
