@@ -1,10 +1,13 @@
 const CONFIG = {
   FRAMEWORK: [
     'sass',
+    // 'bootstrap',
+    // 'materialize',
     'tailwindcss',
     'webpack',
     'mongodb',
     'express',
+    // 'react',
     'nodejs',
   ],
   PORTFOLIO: {

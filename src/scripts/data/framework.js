@@ -18,6 +18,28 @@ const frameworkConfig = {
       },
     },
   },
+  bootstrap: {
+    name: 'Bootstrap',
+    url: 'https://getbootstrap.com',
+    image: {
+      src: '/images/bootstrap.svg',
+      alt: {
+        en: 'bootstrap logo',
+        id: 'logo bootstrap',
+      },
+    },
+  },
+  materialize: {
+    name: 'Materialize',
+    url: 'https://materializecss.com',
+    image: {
+      src: '/images/materialize.svg',
+      alt: {
+        en: 'materialize logo',
+        id: 'logo materialize',
+      },
+    },
+  },
   tailwindcss: {
     name: 'TailwindCSS',
     url: 'https://tailwindcss.com',
