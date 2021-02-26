@@ -20,7 +20,7 @@ https://yusril-adr.github.io
 ```
 - Run developer mode by command :
 ```bash 
-  npm test
+  npm run server
 ```
 - Or if you want to build production mode you can run this command :
 ```bash 
