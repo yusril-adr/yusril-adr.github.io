@@ -10,6 +10,16 @@ const createEnLanguageListTemplate = () => `
   <li><button class="language-item p-2 text-gray-400 hover:text-white w-full text-left" value="id">Indonesia</button></li>
 `;
 
+const createFrameworkItemTemplate = ({
+  name, url, image: { src, alt },
+}, lang) => `
+  <a href="${url}" target="_blank" rel="noreferrer" class="text-center text-white hover:text-blue-400">
+    <img src="${src}" alt="${alt[lang]}" class="h-16 md:h-20 lg:h-16 xl:h-20 m-auto">
+
+    <p class="mt-6">${name}</p>
+  </a>
+`;
+
 const createOddPortfolioTemplate = ({
   name, description, image, url, aria_label,
 }, lang) => `
@@ -75,6 +85,7 @@ const createEvenPortfolioTemplate = ({
 export {
   createIdLanguageListTemplate,
   createEnLanguageListTemplate,
+  createFrameworkItemTemplate,
   createOddPortfolioTemplate,
   createEvenPortfolioTemplate,
 };

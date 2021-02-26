@@ -1,4 +1,11 @@
 const CONFIG = {
+  FRAMEWORK: [
+    'sass',
+    'tailwindcss',
+    'webpack',
+    'mongodb',
+    'nodejs',
+  ],
   PORTFOLIO: {
     ITEMS: 5,
     IMAGES: {

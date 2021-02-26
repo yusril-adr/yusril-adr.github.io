@@ -1,5 +1,7 @@
 import frameworkConfig from '../../data/framework';
 import LanguageHelper from '../../utils/language-helper';
+import CONFIG from '../../global/CONFIG';
+import { createFrameworkItemTemplate } from '../templates/template-creator';
 
 const Framework = {
   async init() {
@@ -19,18 +21,22 @@ const Framework = {
   },
 
   async _renderList() {
-    await this._renderFramework('sass');
-    await this._renderFramework('tailwindcss');
-    await this._renderFramework('webpack');
-    await this._renderFramework('nodejs');
-    await this._renderFramework('mongodb');
+    const listElement = document.querySelector('#framework ul');
+    listElement.innerHTML = '';
+
+    CONFIG.FRAMEWORK.forEach((framework) => this._renderFramework(framework));
   },
 
   async _renderFramework(framework) {
     const lang = await LanguageHelper.getLanguage();
 
-    const logo = document.querySelector(`#framework .${framework}-logo`);
-    logo.setAttribute('aria-label', frameworkConfig.aria_label[framework][lang]);
+    const frameworkElement = document.createElement('li');
+    frameworkElement.classList.add('flex');
+    frameworkElement.classList.add('justify-center');
+    frameworkElement.innerHTML += createFrameworkItemTemplate(frameworkConfig[framework], lang);
+
+    const listElement = document.querySelector('#framework ul');
+    listElement.appendChild(frameworkElement);
   },
 };
 
