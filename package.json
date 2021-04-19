@@ -8,7 +8,7 @@
     "build": "npm run build-image && webpack --config webpack.prod.js",
     "build-image": "node sharp-webp-converter.js && node sharp-resizer.js",
     "graph": "git log --all --oneline --text --decorate --graph",
-    "server": "node app.js"
+    "server": "node server.js"
   },
   "keywords": [
     "portfolio",
@@ -68,6 +68,7 @@
   },
   "dependencies": {
     "@fortawesome/fontawesome-free": "^5.15.2",
+    "@tailwindcss/forms": "^0.3.2",
     "regenerator-runtime": "^0.13.7",
     "tailwindcss": "^2.0.2"
   }

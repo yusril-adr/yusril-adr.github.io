@@ -28,6 +28,10 @@ body {
   background-color: #040402;
 }
 
+textarea {
+  resize: none;
+}
+
 header {
   nav {
     background-color: rgba(4, 4, 2, 0);
@@ -54,9 +58,11 @@ footer {
   @apply animate-slide-from-bottom;
 }
 
-.gradient-bg {
+.gradient-bg,
+.hover\:gradient-bg:hover {
   @apply bg-gradient-to-tr from-blue-400 via-indigo-500 to-green-700;
 }
+
 
 .gradient-border,
 .hover\:gradient-border:hover  {
@@ -80,7 +86,8 @@ footer {
 #about,
 #excellence,
 #framework,
-#portfolio {
+#portfolio,
+#feed {
   position: relative;
 
   &::before {
@@ -165,6 +172,10 @@ footer {
       transform: scale(1);
     }
   }
+}
+
+.form-image {
+  width: 50%;
 }
 
 @media screen and (max-width: 1023px) {

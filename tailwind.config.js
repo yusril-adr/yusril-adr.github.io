@@ -1,3 +1,5 @@
+const tailwindForm = require('@tailwindcss/forms');
+
 module.exports = {
   purge: [
     './src/**/*.html',
@@ -65,5 +67,7 @@ module.exports = {
   variants: {
     extend: {},
   },
-  plugins: [],
+  plugins: [
+    tailwindForm,
+  ],
 };

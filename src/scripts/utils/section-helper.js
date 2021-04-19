@@ -1,17 +1,21 @@
 import Header from '../views/sections/header';
+import Home from '../views/sections/home';
 import About from '../views/sections/about';
 import Excellence from '../views/sections/excellence';
 import Framework from '../views/sections/framework';
 import Portfolio from '../views/sections/portfolio';
+import Feed from '../views/sections/feed';
 import Contact from '../views/sections/contact';
 
 const SectionHelper = {
   async renderSection() {
     await Header.init();
+    await Home.init();
     await About.init();
     await Excellence.init();
     await Framework.init();
     await Portfolio.init();
+    await Feed.init();
     await Contact.init();
   },
 

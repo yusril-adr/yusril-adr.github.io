@@ -6,6 +6,7 @@ const path = require('path');
 const target = path.resolve(__dirname, 'src/public/images');
 const exceptionImage = [
   'icon.png',
+  'me-color.png',
 ];
 
 const isResized = (image, extension) => image.endsWith(`-medium.${extension}`) || image.endsWith(`-small.${extension}`);
