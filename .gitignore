@@ -122,7 +122,6 @@ firebase-debug
 .firebaserc
 
 # other
-logo/
 src/public/images/**.webp
 src/public/images/**-small*
 src/public/images/**-medium*
