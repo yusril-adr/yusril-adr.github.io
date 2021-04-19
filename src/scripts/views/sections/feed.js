@@ -72,7 +72,7 @@ const Feed = {
 
       try {
         Swal.showLoading();
-        await this._validateInput(event.target, lang);
+        await this._validate(event.target, lang);
 
         await this._postForm(event.target);
 
@@ -90,7 +90,9 @@ const Feed = {
     });
   },
 
-  async _validateInput(form, lang) {
+  async _validate(form, lang) {
+    if (!navigator.onLine) throw new ValidationError(CONFIG.ERROR_MESSAGE.NETWORK[lang]);
+
     if (!form['feed-sender'].value || !form['feed-subject'].value || !form['feed-body'].value) {
       throw new ValidationError(feedConfig.toast.validationError[lang]);
     }

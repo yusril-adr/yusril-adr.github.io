@@ -2,6 +2,7 @@ const { merge } = require('webpack-merge');
 const path = require('path');
 const webpack = require('webpack');
 const tailwindcss = require('tailwindcss');
+const HtmlWebpackPlugin = require('html-webpack-plugin');
 const common = require('./webpack.common');
 
 module.exports = merge(common, {
@@ -52,6 +53,11 @@ module.exports = merge(common, {
     ],
   },
   plugins: [
+    new HtmlWebpackPlugin({
+      template: path.resolve(__dirname, 'src/templates/index.html'),
+      favicon: path.resolve('src', 'public', 'images', 'icon.png'),
+      filename: 'index.html',
+    }),
     new webpack.HotModuleReplacementPlugin(),
   ],
 });

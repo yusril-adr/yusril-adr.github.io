@@ -21,6 +21,10 @@ const CONFIG = {
   ERROR_MESSAGE: {
     en: 'Something went wrong.',
     id: 'Telah terjadi kesalahan.',
+    NETWORK: {
+      en: 'Network connection required.',
+      id: 'Koneksi internet diperlukan.',
+    },
   },
 };
 
