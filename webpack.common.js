@@ -1,6 +1,5 @@
 const path = require('path');
 const CopyWebpackPlugin = require('copy-webpack-plugin');
-const WebpackPwaManifest = require('webpack-pwa-manifest');
 const { GenerateSW } = require('workbox-webpack-plugin');
 const { CleanWebpackPlugin } = require('clean-webpack-plugin');
 
@@ -35,28 +34,6 @@ module.exports = {
         {
           from: path.resolve(__dirname, 'src/public/images/'),
           to: path.resolve(__dirname, 'dist/images/'),
-        },
-      ],
-    }),
-    new WebpackPwaManifest({
-      filename: 'manifest.json',
-      name: 'Yusril A. P. Portfolio',
-      short_name: 'Yusril A. P.',
-      description: 'Front-end Developer | Back-end Developer | Fullstack Developer',
-      start_url: '/',
-      display: 'standalone',
-      background_color: '#040402',
-      theme_color: '#1e2327',
-      inject: true,
-      fingerprints: true,
-      ios: true,
-      icons: [
-        {
-          src: path.resolve('src', 'public', 'images', 'icon.png'),
-          sizes: [192, 256, 384, 512],
-          ios: true,
-          destination: 'images',
-          purpose: 'any maskable',
         },
       ],
     }),

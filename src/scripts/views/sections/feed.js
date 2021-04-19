@@ -76,6 +76,8 @@ const Feed = {
 
         await this._postForm(event.target);
 
+        await this._emptyInput(form);
+
         await Toast.fire({
           icon: 'success',
           title: feedConfig.toast.success[lang],
@@ -113,6 +115,17 @@ const Feed = {
     const responseJSON = await response.json();
 
     if (response.status !== 200) throw new Error(responseJSON.message);
+  },
+
+  async _emptyInput(form) {
+    const sender = form.querySelector('#feed-sender');
+    sender.value = '';
+
+    const subject = form.querySelector('#feed-subject');
+    subject.value = '';
+
+    const body = form.querySelector('#feed-body');
+    body.value = '';
   },
 };
 
