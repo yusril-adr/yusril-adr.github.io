@@ -31,6 +31,16 @@ const feedConfig = {
       id: 'Foto saya',
     },
   },
+  toast: {
+    success: {
+      en: 'Mail was sent successfully',
+      id: 'Pesan berhasil dikirim.',
+    },
+    validationError: {
+      en: 'Make sure all inputs are filled',
+      id: 'Pastikan semua input terisi',
+    },
+  },
 };
 
 export default feedConfig;

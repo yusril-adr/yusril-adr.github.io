@@ -9,7 +9,7 @@ const App = {
     await LanguageInitiator.init();
     await HeaderInitiator.init();
     await SectionHelper.initAnimation();
-    // await swRegister();
+    await swRegister();
   },
 
   async _scrollToTop() {
