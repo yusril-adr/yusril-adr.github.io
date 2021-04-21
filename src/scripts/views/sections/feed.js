@@ -3,7 +3,6 @@ import feedConfig from '../../data/feed';
 import CONFIG from '../../global/CONFIG';
 import LanguageHelper from '../../utils/language-helper';
 import FeedHelper from '../../utils/feed-helper';
-import Toast from '../../utils/toast';
 import ValidationError from '../../utils/validationError';
 
 const Feed = {
@@ -78,16 +77,18 @@ const Feed = {
 
         await this._emptyInput(form);
 
-        await Toast.fire({
-          icon: 'success',
-          title: feedConfig.toast.success[lang],
-        });
+        await Swal.fire(
+          feedConfig.toast.success[lang],
+          '',
+          'success',
+        );
       } catch (error) {
-        await Toast.fire({
-          icon: 'error',
-          title: (error instanceof ValidationError)
+        await Swal.fire(
+          (error instanceof ValidationError)
             ? error.message : CONFIG.ERROR_MESSAGE[lang],
-        });
+          '',
+          'error',
+        );
       }
     });
   },

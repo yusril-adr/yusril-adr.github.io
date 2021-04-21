@@ -1,7 +1,4 @@
 const CONFIG = {
-  BREAKPOINTS: {
-    sm: 640,
-  },
   FRAMEWORK: [
     'sass',
     // 'bootstrap',
