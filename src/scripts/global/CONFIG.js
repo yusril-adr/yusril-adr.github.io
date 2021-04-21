@@ -20,7 +20,7 @@ const CONFIG = {
       MEDIUM: 640,
     },
   },
-  FEED_URL: 'http://127.0.0.1:3000/api/feeds',
+  FEED_URL: 'https://yusril-feeds.herokuapp.com/api/feeds',
   ERROR_MESSAGE: {
     en: 'Something went wrong.',
     id: 'Telah terjadi kesalahan.',
