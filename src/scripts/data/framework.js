@@ -85,7 +85,7 @@ const frameworkConfig = {
     },
   },
   react: {
-    name: 'React',
+    name: 'React JS',
     url: 'https://reactjs.org',
     image: {
       src: '/images/react.svg',
