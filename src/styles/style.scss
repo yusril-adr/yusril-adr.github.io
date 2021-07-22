@@ -9,16 +9,19 @@
   @font-face {
     font-family: 'Montserrat Black';
     font-weight: 400;
+    font-display: swap;
     src: url('../public/fonts/Montserrat-Black.ttf') format('truetype');
   }
   @font-face {
     font-family: 'Montserrat';
     font-weight: 400;
+    font-display: swap;
     src: url('../public/fonts/Montserrat-regular.ttf') format('truetype');
   }
   @font-face {
     font-family: 'Roboto Mono';
     font-weight: 400;
+    font-display: swap;
     src: url('../public/fonts/RobotoMono-Regular.ttf') format('truetype');
   }
 }
@@ -135,7 +138,7 @@ footer {
 }
 
 .about-illust {
-  font-family: 'Roboto Mono', monospace;
+  font-family: 'Roboto Mono', monospace, sans-serif;
   letter-spacing: -.5rem;
   width: 50%;
 }
