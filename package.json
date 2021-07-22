@@ -69,6 +69,7 @@
   "dependencies": {
     "@fortawesome/fontawesome-free": "^5.15.2",
     "@tailwindcss/forms": "^0.3.2",
+    "lazysizes": "^5.3.2",
     "regenerator-runtime": "^0.13.7",
     "sweetalert2": "^10.16.4",
     "tailwindcss": "^2.0.2"
