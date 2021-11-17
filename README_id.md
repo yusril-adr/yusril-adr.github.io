@@ -19,7 +19,7 @@ https://yusril-adr.github.io
 ```
 - Jalankan mode developer dengan perintah :
 ```bash 
-  npm test
+  npm run server
 ```
 - Atau jika anda ingin membuild mode production, jalankan perintah : 
 ```bash 
