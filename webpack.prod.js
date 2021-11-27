@@ -6,6 +6,7 @@ const OptimizeCSSAssetsPlugin = require('optimize-css-assets-webpack-plugin');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 const WebpackPwaManifest = require('webpack-pwa-manifest');
 const ImageminPlugin = require('imagemin-webpack-plugin').default;
+const { CleanWebpackPlugin } = require('clean-webpack-plugin');
 const common = require('./webpack.common');
 
 // Needed to remove unused tailwindcss
@@ -152,5 +153,6 @@ module.exports = merge(common, {
         quality: 50,
       },
     }),
+    new CleanWebpackPlugin(),
   ],
 });

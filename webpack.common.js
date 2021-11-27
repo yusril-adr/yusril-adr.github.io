@@ -1,7 +1,6 @@
 const path = require('path');
 const CopyWebpackPlugin = require('copy-webpack-plugin');
 const { GenerateSW } = require('workbox-webpack-plugin');
-const { CleanWebpackPlugin } = require('clean-webpack-plugin');
 
 module.exports = {
   entry: {
@@ -42,6 +41,5 @@ module.exports = {
       clientsClaim: true,
       skipWaiting: true,
     }),
-    new CleanWebpackPlugin(),
   ],
 };

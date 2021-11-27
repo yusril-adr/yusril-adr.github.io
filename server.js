@@ -10,13 +10,15 @@ const compiler = webpack(webpackConfig);
 const PORT = 8080;
 const app = express();
 
-app.use(webpackDevMiddleware(compiler, {
-  publicPath: webpackConfig.output.publicPath,
-}));
+if (process.env.NODE_ENV === 'development') {
+  app.use(webpackDevMiddleware(compiler, {
+    publicPath: webpackConfig.output.publicPath,
+  }));
 
-app.use(webpackHotMiddleware(compiler));
+  app.use(webpackHotMiddleware(compiler));
+}
 
-app.use(express.static('dist'));
+app.use(express.static(path.resolve(__dirname, 'dist')));
 
 app.get('/', (request, response) => {
   response.sendFile(path.resolve(__dirname, 'dist/index.html'));
