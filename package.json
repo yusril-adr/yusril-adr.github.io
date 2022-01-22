@@ -8,7 +8,8 @@
     "build": "npm run build-image && webpack --config webpack.prod.js",
     "build-image": "node sharp-webp-converter.js && node sharp-resizer.js",
     "graph": "git log --all --oneline --text --decorate --graph",
-    "start": "node server.js"
+    "start": "node server.js",
+    "start-dev": "cross-env NODE_ENV=development node server.js"
   },
   "keywords": [
     "portfolio",
@@ -38,6 +39,7 @@
     "babel-loader": "^8.2.2",
     "clean-webpack-plugin": "^3.0.0",
     "copy-webpack-plugin": "^7.0.0",
+    "cross-env": "^7.0.3",
     "css-loader": "^5.0.1",
     "eslint": "^7.19.0",
     "eslint-config-airbnb-base": "^14.2.1",
