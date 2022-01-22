@@ -20,7 +20,7 @@ const portofolioConfig = {
         name: 'rutinitas_pelajar',
         size: 2160,
       },
-      url: 'https://rutinitaspelajar.duckdns.org',
+      url: 'https://rutinitaspelajar.herokuapp.com',
       aria_label: {
         en: 'Visit the website',
         id: 'Kunjungi website',
