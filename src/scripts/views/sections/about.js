@@ -10,7 +10,7 @@ const About = {
 
   async _renderDecorationObject() {
     const lang = await LanguageHelper.getLanguage();
-    const illust = document.querySelector('#about .about-illust')
+    const illust = document.querySelector('#about .about-illust');
     illust.setAttribute('aria-label', aboutConfig.decoration.aria_label[lang]);
   },
 
