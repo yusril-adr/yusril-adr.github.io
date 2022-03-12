@@ -21,8 +21,8 @@ const Portfolio = {
 
   async _renderSubtitle() {
     const lang = await LanguageHelper.getLanguage();
-    const title = document.querySelector('#portfolio .subtitle');
-    title.innerHTML = portofolioConfig.subtitle[lang];
+    const subtitle = document.querySelector('#portfolio .subtitle');
+    subtitle.innerHTML = portofolioConfig.subtitle[lang];
   },
 
   async _renderPortfolios() {
