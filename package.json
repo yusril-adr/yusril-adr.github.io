@@ -22,7 +22,7 @@
   "author": "Yusril A. P. <yusriladr.37@gmail.com>",
   "license": "BSD 3-clause \"New\" or \"Revised\" license",
   "engines": {
-    "node": "14.x"
+    "node": "16.x"
   },
   "browserslist": [
     "defaults",
