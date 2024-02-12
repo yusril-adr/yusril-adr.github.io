@@ -1,7 +1,7 @@
 {
   "name": "yusril-portfolio",
   "version": "1.0.0",
-  "description": "Show yonaka works as web developer",
+  "description": "Show Yusril A. P. works as web developer",
   "main": "app.js",
   "scripts": {
     "analyze": "webpack --config webpack.analyzer.js",

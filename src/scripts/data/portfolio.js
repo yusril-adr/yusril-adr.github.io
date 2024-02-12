@@ -8,24 +8,24 @@ const portofolioConfig = {
     id: 'Beberapa karya menakjubkan yang saya buat.',
   },
   portfolios: [
-    {
-      name: 'Rutinitas Pelajar',
-      description: {
-        en:
-          'Rutinitas pelajar or school routine(in english) is an progressive web apps that will help you as student to manage your school task.',
-        id:
-          'Rutinitas pelajar merupakan aplikasi berbasis progressive web apps yang membantu kamu sebagai pelajar mengatur kebutuhan rutinitas kamu.',
-      },
-      image: {
-        name: 'rutinitas_pelajar',
-        size: 2160,
-      },
-      url: 'https://rutinitaspelajar.herokuapp.com',
-      aria_label: {
-        en: 'Visit the website',
-        id: 'Kunjungi website',
-      },
-    },
+    // {
+    //   name: 'Rutinitas Pelajar',
+    //   description: {
+    //     en:
+    //       'Rutinitas pelajar or school routine(in english) is an progressive web apps that will help you as student to manage your school task.',
+    //     id:
+    //       'Rutinitas pelajar merupakan aplikasi berbasis progressive web apps yang membantu kamu sebagai pelajar mengatur kebutuhan rutinitas kamu.',
+    //   },
+    //   image: {
+    //     name: 'rutinitas_pelajar',
+    //     size: 2160,
+    //   },
+    //   url: 'https://rutinitaspelajar.herokuapp.com',
+    //   aria_label: {
+    //     en: 'Visit the website',
+    //     id: 'Kunjungi website',
+    //   },
+    // },
     {
       name: 'Wager - Wallet Manager',
       description: {
@@ -62,24 +62,24 @@ const portofolioConfig = {
         id: 'Kunjungi website',
       },
     },
-    {
-      name: 'ShohibQu',
-      description: {
-        en:
-          'Shohibqu is an application that is hopely able to be a friend every day for people who focus on practicing daily prayers that are sometimes often forgotten. With the addition of the quiz feature, the Al-Qur\'an and the stories of pious people at that time, we can take the moral value from its past.',
-        id:
-          'Shohibqu merupakan aplikasi yang diharapkan menjadi sahabat setiap hari bagi masyarakat yang berfokus pada pengamalan do\'a sehari - hari yang terkadang sering dilupakan. Dengan tambahan fitur quiz, Al-Qur\'an dan cerita dari para orang - orang shaleh pada zaman dahulu untuk dapat diambil ibrah dan pengajarannya.',
-      },
-      image: {
-        name: 'shohibqu',
-        size: 1080,
-      },
-      url: 'https://shohibqu.web.app/',
-      aria_label: {
-        en: 'Visit the website',
-        id: 'Kunjungi website',
-      },
-    },
+    // {
+    //   name: 'ShohibQu',
+    //   description: {
+    //     en:
+    //       'Shohibqu is an application that is hopely able to be a friend every day for people who focus on practicing daily prayers that are sometimes often forgotten. With the addition of the quiz feature, the Al-Qur\'an and the stories of pious people at that time, we can take the moral value from its past.',
+    //     id:
+    //       'Shohibqu merupakan aplikasi yang diharapkan menjadi sahabat setiap hari bagi masyarakat yang berfokus pada pengamalan do\'a sehari - hari yang terkadang sering dilupakan. Dengan tambahan fitur quiz, Al-Qur\'an dan cerita dari para orang - orang shaleh pada zaman dahulu untuk dapat diambil ibrah dan pengajarannya.',
+    //   },
+    //   image: {
+    //     name: 'shohibqu',
+    //     size: 1080,
+    //   },
+    //   url: 'https://shohibqu.web.app/',
+    //   aria_label: {
+    //     en: 'Visit the website',
+    //     id: 'Kunjungi website',
+    //   },
+    // },
   ],
 };
 

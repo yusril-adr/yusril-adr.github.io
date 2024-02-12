@@ -4,7 +4,7 @@ import About from '../views/sections/about';
 import Excellence from '../views/sections/excellence';
 import Framework from '../views/sections/framework';
 import Portfolio from '../views/sections/portfolio';
-import Feed from '../views/sections/feed';
+// import Feed from '../views/sections/feed';
 import Contact from '../views/sections/contact';
 import Footer from '../views/sections/footer';
 
@@ -16,7 +16,7 @@ const SectionHelper = {
     await Excellence.init();
     await Framework.init();
     await Portfolio.init();
-    await Feed.init();
+    // await Feed.init();
     await Contact.init();
     await Footer.init();
   },
