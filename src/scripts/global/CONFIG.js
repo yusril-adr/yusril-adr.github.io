@@ -1,14 +1,16 @@
 const CONFIG = {
   FRAMEWORK: [
-    'nodejs',
+    // 'nodejs',
     'sass',
     // 'bootstrap',
     // 'materialize',
     // 'tailwindcss',
-    'webpack',
+    // 'webpack',
     'react',
+    'chakraUi',
     'express',
     'mongodb',
+    'firebase',
   ],
   PORTFOLIO: {
     ITEMS: 5,

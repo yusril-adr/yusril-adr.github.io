@@ -7,17 +7,7 @@ const frameworkConfig = {
     en: 'Some of frameworks that I use frequently.',
     id: 'Beberapa framework yang sering saya gunakan.',
   },
-  sass: {
-    name: 'Sass',
-    url: 'https://sass-lang.com',
-    image: {
-      src: '/images/sass.svg',
-      alt: {
-        en: 'sass logo',
-        id: 'logo sass',
-      },
-    },
-  },
+  // Framework Lists
   bootstrap: {
     name: 'Bootstrap',
     url: 'https://getbootstrap.com',
@@ -29,6 +19,39 @@ const frameworkConfig = {
       },
     },
   },
+  chakraUi: {
+    name: 'Chakra UI',
+    url: 'https://chakra-ui.com',
+    image: {
+      src: '/images/chakra-ui.svg',
+      alt: {
+        en: 'chakra-ui logo',
+        id: 'logo chakra-ui',
+      },
+    },
+  },
+  express: {
+    name: 'Express',
+    url: 'https://expressjs.com',
+    image: {
+      src: '/images/express.svg',
+      alt: {
+        en: 'express logo',
+        id: 'logo express',
+      },
+    },
+  },
+  firebase: {
+    name: 'Firebase',
+    url: 'https://firebase.google.com',
+    image: {
+      src: '/images/firebase.svg',
+      alt: {
+        en: 'firebase logo',
+        id: 'logo firebase',
+      },
+    },
+  },
   materialize: {
     name: 'Materialize',
     url: 'https://materializecss.com',
@@ -37,6 +60,61 @@ const frameworkConfig = {
       alt: {
         en: 'materialize logo',
         id: 'logo materialize',
+      },
+    },
+  },
+  mongodb: {
+    name: 'MongoDB',
+    url: 'https://www.mongodb.com"',
+    image: {
+      src: '/images/mongodb.svg',
+      alt: {
+        en: 'mongodb logo',
+        id: 'logo mongodb',
+      },
+    },
+  },
+  nodejs: {
+    name: 'Node JS',
+    url: 'https://nodejs.org',
+    image: {
+      src: '/images/nodejs.svg',
+      alt: {
+        en: 'node js logo',
+        id: 'logo nodejs',
+      },
+    },
+  },
+  react: {
+    name: 'React JS',
+    url: 'https://reactjs.org',
+    image: {
+      src: '/images/react.svg',
+      alt: {
+        en: 'react logo',
+        id: 'logo react',
+      },
+    },
+  },
+  sass: {
+    name: 'Sass',
+    url: 'https://sass-lang.com',
+    image: {
+      src: '/images/sass.svg',
+      alt: {
+        en: 'sass logo',
+        id: 'logo sass',
+      },
+    },
+  },
+  supabase: {
+    name: 'Supabase',
+    url: 'https://supabase.com',
+    image: {
+      src: '/images/supabase.svg',
+      alt: {
+        en: 'supabase logo',
+        id: 'logo supabase',
       },
     },
   },
@@ -59,50 +137,6 @@ const frameworkConfig = {
       alt: {
         en: 'webpack logo',
         id: 'logo webpack',
-      },
-    },
-  },
-  mongodb: {
-    name: 'MongoDB',
-    url: 'https://www.mongodb.com"',
-    image: {
-      src: '/images/mongodb.svg',
-      alt: {
-        en: 'mongodb logo',
-        id: 'logo mongodb',
-      },
-    },
-  },
-  express: {
-    name: 'Express',
-    url: 'https://expressjs.com',
-    image: {
-      src: '/images/express.svg',
-      alt: {
-        en: 'express logo',
-        id: 'logo express',
-      },
-    },
-  },
-  react: {
-    name: 'React JS',
-    url: 'https://reactjs.org',
-    image: {
-      src: '/images/react.svg',
-      alt: {
-        en: 'react logo',
-        id: 'logo react',
-      },
-    },
-  },
-  nodejs: {
-    name: 'Node JS',
-    url: 'https://nodejs.org',
-    image: {
-      src: '/images/nodejs.svg',
-      alt: {
-        en: 'node js logo',
-        id: 'logo nodejs',
       },
     },
   },
