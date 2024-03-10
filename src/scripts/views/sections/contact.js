@@ -11,7 +11,8 @@ const Contact = {
   async _renderWeb() {
     const lang = await LanguageHelper.getLanguage();
     document.querySelector('#contact .web-title').innerHTML = contactConfig.web.title[lang];
-    document.querySelector('#contact .web-university').innerHTML = contactConfig.web.university[lang];
+    // eslint-disable-next-line max-len
+    // document.querySelector('#contact .web-university').innerHTML = contactConfig.web.university[lang];
     document.querySelector('#contact .web-location').innerHTML = contactConfig.web.location[lang];
   },
 
