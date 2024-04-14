@@ -1,3 +1,4 @@
+/* eslint-disable max-len */
 const portofolioConfig = {
   title: {
     en: 'Portfolio',
@@ -30,9 +31,9 @@ const portofolioConfig = {
       name: 'Wager - Wallet Manager',
       description: {
         en:
-          'Wager (Wallet Manager) is an app that will help you to organize your personal cashflow. You can add or delete transaction and the app will help you calculate your income, cash and balance in one month.',
+          'Your Personal Finance Assistant: Wallet Manager (Wager)! Stay on top of your spending, organize your transactions, and watch your savings grow. With intuitive features and real-time insights, managing your money has never been easier!',
         id:
-          'Wager (Wallet Manager) adalah aplikasi yang akan membantu mengatur keuangan anda. Anda bisa menambahkan atau menghapus transaksi dan aplikasi akan otomatis menghitung pemasukan, pengeluaran dan sisa saldo anda.',
+          'Asisten Keuangan Pribadi Anda: Wallet Manager! Tetapkan pengeluaran Anda, atur transaksi, dan saksikan tabungan Anda bertumbuh. Dengan fitur intuitif dan wawasan real-time, mengelola uang Anda jadi lebih mudah!',
       },
       image: {
         name: 'wager',
@@ -48,9 +49,9 @@ const portofolioConfig = {
       name: 'Ani-Time',
       description: {
         en:
-          'A progressive web application that contains list of anime detail, user can add or remove anime to user list.',
+          'Dive into the World of Anime with ANi-TIME! Keep track of your favorite anime and discover new series, all in one place! From classics to the latest releases, ANi-TIME has everything you need to fuel your anime obsession!',
         id:
-          'Sebuah aplikasi progresif berbasis web yang berisi list detail anime, pengguna bisa menambah atau menghapus anime dari list pengguna itu sendiri.',
+          'Jelajahi Dunia Anime dengan ANi-TIME! Pantau anime favoritmu dan temukan serial baru, semuanya dalam satu tempat! Dari klasik hingga yang terbaru, ANi-TIME memiliki segalanya untuk memuaskan kegemaran anime-mu!',
       },
       image: {
         name: 'ani-time',
@@ -80,6 +81,24 @@ const portofolioConfig = {
     //     id: 'Kunjungi website',
     //   },
     // },
+    {
+      name: 'D-Forum App',
+      description: {
+        en:
+          'Introducing the Next Level of Community Engagement: D-Forum App! Join the conversation, share your thoughts, and connect with like-minded individuals effortlessly. Whether you\'re passionate about tech, art, or anything in between, D-Forum has a space for you!',
+        id:
+          'Perkenalkan Era Baru Keterlibatan Komunitas: D-Forum App! Bergabunglah dalam percakapan, bagikan pemikiranmu, dan terhubung dengan individu seangkatan dengan mudah. Apapun minatmu, apakah itu teknologi, seni, atau hal lainnya, D-Forum memiliki ruang untukmu!',
+      },
+      image: {
+        name: 'd-forum-app',
+        size: 1080,
+      },
+      url: 'hhttps://d-forum-app.vercel.app',
+      aria_label: {
+        en: 'Visit the website',
+        id: 'Kunjungi website',
+      },
+    },
   ],
 };
 
