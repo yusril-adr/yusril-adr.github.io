@@ -93,7 +93,7 @@ const portofolioConfig = {
         name: 'd-forum-app',
         size: 1080,
       },
-      url: 'hhttps://d-forum-app.vercel.app',
+      url: 'https://d-forum-app.vercel.app',
       aria_label: {
         en: 'Visit the website',
         id: 'Kunjungi website',
