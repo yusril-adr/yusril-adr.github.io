@@ -4,10 +4,8 @@ const aboutConfig = {
     id: 'Tentang Saya',
   },
   description: {
-    en:
-    'Im a Junior Javascript Web Developer. Experienced in web development using MySQL and MongoDB as database. Also experiencded using Javascript framework tools like NodeJS, ReactJS, Express. Currently focus on developing web app using API and Single-Page App approach with MERN Stack which is stand for MongoDB Express ReactJS NodeJS.',
-    id:
-      'Saya adalah seorang Junior Javascript Web Developer. Berpengalaman dalam pengembangan web menggunakan MySQL dan MongoDB sebagai database. Dan juga berpengalaman menggunakan framework Javascript seperti NodeJS, ReactJS, ExpressJS. Saat ini fokus pada pengembangan web menggunakan pendekatan API dan Single-Page App dengan MERN Stack yang merupakan singkatan dari MongoDB Express ReactJS NodeJS.',
+    en: "Hello, I'm Yusril Adriansyah Putra, a web developer with over three years of experience in front-end and back-end development. I specialize in NodeJS, ReactJS, and ExpressJS, and have worked with MySQL, PostgreSQL, MongoDB, and Supabase.<br><br>I've been an External Code Reviewer at PT Dicoding and a Frontend/Backend Developer at Xpixelhub and Telkom Direktorat Digital Business.<br><br>I'm passionate about creating user-friendly web applications and constantly learning new technologies. Explore my projects and contact me for collaboration or inquiries.",
+    id: 'Halo, saya Yusril Adriansyah Putra, seorang web developer dengan pengalaman lebih dari tiga tahun dalam pengembangan front-end dan back-end. Saya menguasai NodeJS, ReactJS, dan ExpressJS, serta bekerja dengan MySQL, PostgreSQL, MongoDB, dan Supabase.<br><br>Saya pernah menjadi External Code Reviewer di PT Dicoding dan Frontend/Backend Developer di Xpixelhub dan Telkom Direktorat Digital Business.<br><br>Saya bersemangat menciptakan aplikasi web yang ramah pengguna dan terus mempelajari teknologi baru. Jelajahi proyek-proyek saya dan hubungi saya untuk kolaborasi atau pertanyaan.',
   },
   decoration: {
     aria_label: {
