@@ -1,8 +1,8 @@
 const contactConfig = {
   web: {
     title: {
-      en: 'My <span class="text-gradient font-bold">Portfolio</span>',
-      id: 'Web <span class="text-gradient font-bold">Portofolio</span>',
+      en: '<span class="text-gradient font-bold">yusril</span>-adr',
+      id: '<span class="text-gradient font-bold">yusril</span>-adr',
     },
     university: {
       en: 'State University of Surabaya',
