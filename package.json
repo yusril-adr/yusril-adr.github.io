@@ -1,7 +1,12 @@
 {
-  "name": "portofolio-new",
-  "version": "0.1.0",
-  "private": true,
+  "name": "yusril-portfolio",
+  "version": "1.0.0",
+  "description": "Show Yusril A. P. works as web developer",
+  "author": "Yusril A. P. <yusriladr.37@gmail.com>",
+  "license": "BSD 3-clause \"New\" or \"Revised\" license",
+  "engines": {
+    "node": ">=22.x"
+  },
   "scripts": {
     "dev": "next dev --turbopack",
     "build": "next build --turbopack",

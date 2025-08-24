@@ -31,7 +31,7 @@ A modern, responsive portfolio website built with Next.js 15 and featuring Progr
 
 ### Prerequisites
 
-- **Node.js** 20.x or later
+- **Node.js** 22.x or later
 - **npm** 10.x or later
 
 ### Development Setup
@@ -176,7 +176,7 @@ src/
 
 ## 📝 License
 
-This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md) file for details.
+This project is licensed under the BSD 3-Clause License - see the [LICENSE.md](LICENSE.md) file for details.
 
 ## 👨‍💻 Author
 
