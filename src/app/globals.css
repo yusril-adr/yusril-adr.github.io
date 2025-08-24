@@ -1,0 +1,377 @@
+@import "tailwindcss";
+
+@layer base {
+  @font-face {
+    font-family: "Montserrat Black";
+    font-weight: 400;
+    font-display: swap;
+    src: url("../../public/fonts/Montserrat-Black.ttf") format("truetype");
+  }
+  @font-face {
+    font-family: "Montserrat";
+    font-weight: 400;
+    font-display: swap;
+    src: url("../../public/fonts/Montserrat-Regular.ttf") format("truetype");
+  }
+  @font-face {
+    font-family: "Roboto Mono";
+    font-weight: 400;
+    font-display: swap;
+    src: url("../../public/fonts/RobotoMono-Regular.ttf") format("truetype");
+  }
+}
+
+@theme {
+
+  @keyframes slide-from-bottom {
+    0% {
+      opacity: 0;
+      transform: translateY(3rem);
+    }
+    100% {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+
+  @keyframes fade-in {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+
+  @keyframes pulse {
+    0%,
+    100% {
+      opacity: 0;
+    }
+    50% {
+      opacity: 1;
+    }
+  }
+
+  @keyframes pop-up {
+    0% {
+      transform: scale(0);
+    }
+    100% {
+      transform: scale(1);
+    }
+  }
+
+  @keyframes slide-from-top {
+    0% {
+      opacity: 0;
+      transform: translateY(-3rem);
+    }
+    100% {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+
+  --animate-pulse: pulse 1s linear infinite;
+}
+
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.5);
+  -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #6366f1;
+  border-radius: 10px;
+  box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.5);
+  -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.5);
+}
+
+body {
+  box-sizing: border-box;
+  background-color: #000;
+  font-family: "Montserrat", sans-serif;
+}
+
+textarea {
+  resize: none;
+}
+
+header nav {
+  background-color: rgba(0, 0, 0, 0);
+  transition-property: color, background-color, border-color,
+    text-decoration-color, fill, stroke;
+  transition-duration: 300ms;
+  transition-timing-function: ease-in;
+}
+
+header.onscroll nav {
+  background-color: rgba(0, 0, 0, 1);
+}
+
+section {
+  opacity: 0;
+}
+
+footer {
+  min-height: 75px;
+  background-color: #0c0d0c;
+}
+
+.reached {
+  animation: slide-from-bottom 0.7s ease forwards;
+}
+
+.gradient-bg,
+.hover\:gradient-bg:hover {
+  background-image: linear-gradient(
+    to top right,
+    rgb(96, 165, 250),
+    rgb(99, 102, 241),
+    rgb(4, 120, 87)
+  );
+}
+
+.gradient-border,
+.hover\:gradient-border:hover {
+  border-style: solid;
+  border-width: 2px;
+  border-image-slice: 1;
+  border-image-source: linear-gradient(
+    to top right,
+    rgb(96, 165, 250),
+    rgb(99, 102, 241),
+    rgb(4, 120, 87)
+  );
+}
+
+.text-gradient,
+.hover\:text-gradient:hover {
+  background-image: linear-gradient(
+    to top right,
+    rgb(96, 165, 250),
+    rgb(99, 102, 241),
+    rgb(4, 120, 87)
+  );
+  color: rgb(255, 255, 255);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+#home,
+#contact {
+  opacity: 1;
+}
+
+#about,
+#excellence,
+#framework,
+#portfolio,
+#feed {
+  position: relative;
+}
+
+#about::before,
+/* #excellence::before, */
+#framework::before,
+#portfolio::before,
+#feed::before {
+  content: "";
+  border-width: 2px;
+  border-style: solid;
+  border-color: rgba(55, 65, 81, 0.3);
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 50%;
+}
+
+#about::after,
+/* #excellence::after, */
+#framework::after,
+#portfolio::after,
+#feed::after {
+  content: "";
+  height: 5rem;
+  position: absolute;
+  top: -2.5rem;
+  border-style: solid;
+  border-right-width: 0;
+  border-left-width: 4px;
+  border-image-slice: 1;
+  border-image-source: linear-gradient(to top right, #60a5fa, #6366f1, #047857);
+}
+
+/* #excellence::before, */
+#framework::before {
+  left: 0;
+}
+
+#contact {
+  background-color: #111;
+}
+
+.language-list.active {
+  opacity: 1;
+  transform: scale(1);
+}
+
+.language-item:hover {
+  background-color: #111;
+}
+
+.my-picture,
+.my-picture img {
+  min-width: 100%;
+}
+
+.about-illust {
+  font-family: "Roboto Mono", monospace, sans-serif;
+  letter-spacing: -0.5rem;
+  width: 50%;
+}
+
+.portfolio-image {
+  position: relative;
+}
+
+.portfolio-image .hover-image {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(0, 0, 0, 0);
+  transition: background-color 0.3s ease;
+}
+
+.portfolio-image svg {
+  transform: scale(0);
+  transition: transform 0.3s ease;
+}
+
+.portfolio-image:hover {
+  border-style: solid;
+  border-width: 4px;
+  border-image-slice: 1;
+  border-image-source: linear-gradient(
+    to top right,
+    rgb(96, 165, 250),
+    rgb(99, 102, 241),
+    rgb(4, 120, 87)
+  );
+}
+
+.portfolio-image:hover .hover-image {
+  background-color: rgba(0, 0, 0, 0.75);
+}
+
+.portfolio-image:hover svg {
+  transform: scale(1);
+}
+
+.form-image {
+  width: 50%;
+}
+
+.container {
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 2rem;
+  padding-right: 2rem;
+}
+
+@media (min-width: 640px) {
+  .container {
+    padding-left: 3rem;
+    padding-right: 3rem;
+  }
+}
+
+@media (min-width: 1024px) {
+  .container {
+    padding-left: 5rem;
+    padding-right: 5rem;
+  }
+}
+
+@media (min-width: 1280px) {
+  .container {
+    padding-left: 6rem;
+    padding-right: 6rem;
+  }
+}
+
+@media (min-width: 1536px) {
+  .container {
+    padding-left: 7rem;
+    padding-right: 7rem;
+  }
+}
+
+@media screen and (max-width: 1023px) {
+  header nav .nav-list-container {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    opacity: 0;
+    transition-property: opacity;
+    transition-duration: 300ms;
+    transition-timing-function: ease-in;
+    visibility: hidden;
+  }
+
+  header nav .nav-list-container .nav-list {
+    position: relative;
+    z-index: 10;
+    margin: auto;
+    background-color: rgba(0, 0, 0, 0);
+    border-radius: 0.5rem;
+    transform: scale(0);
+    transition-property: all;
+    transition-duration: 300ms;
+    transition-timing-function: ease-in;
+  }
+
+  header nav .nav-list-container.active {
+    opacity: 1;
+    right: 0;
+    visibility: visible;
+  }
+
+  header nav .nav-list-container.active .nav-list {
+    background-color: rgba(0, 0, 0, 0.9);
+    transform: scale(1);
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .my-picture,
+  .my-picture img {
+    min-width: unset;
+    max-width: 70%;
+  }
+
+  .paragraf-container {
+    max-width: 50%;
+  }
+
+  .portfolio-text {
+    max-width: 50%;
+  }
+
+  .portfolio-image {
+    max-width: 40%;
+  }
+}
