@@ -16,6 +16,8 @@ const staticAssets = [
 
 // Install event - cache static assets
 self.addEventListener('install', (event) => {
+  self.skipWaiting();
+
   event.waitUntil(
     caches.open(STATIC_CACHE)
       .then((cache) => {
@@ -26,7 +28,6 @@ self.addEventListener('install', (event) => {
         console.error('Failed to cache static assets:', error);
       })
   );
-  self.skipWaiting();
 });
 
 // Activate event - clean up old caches
