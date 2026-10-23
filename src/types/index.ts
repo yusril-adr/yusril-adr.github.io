@@ -96,6 +96,7 @@ export interface ContactConfig {
 }
 
 export interface AppConfig {
+  IS_USING_SW: boolean;
   FRAMEWORK: string[];
   PORTFOLIO: {
     ITEMS: number;
