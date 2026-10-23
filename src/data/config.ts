@@ -2,7 +2,7 @@ import { AppConfig } from '../types';
 
 const CONFIG: AppConfig = {
   // true: register /sw.js as now. false: unregister every service worker and clear its caches
-  IS_USING_SW: true,
+  IS_USING_SW: false,
   FRAMEWORK: [
     // 'nodejs',
     'sass',
